@@ -32,3 +32,27 @@ const heros = ["hero", "gunda", "villan"];
 // };
 
 console.log(typeof bigNumber);
+
+//***************************************************** *
+
+//Stack (Primitive), Heap Memory (Non-Primitive)
+
+let myName = "sushant";
+
+let anothername = myName; //uses stack which creates copies of that variables and modifes it
+
+anothername = "mrskilled";
+
+console.log(myName); //sushant
+console.log(anothername); // mrskilled
+
+let userOne = {
+  email: "user@google.com", //uses heap memory ko refrence paucha directly change value at original memory location
+  upi: "user@ybl.com",
+};
+
+let userTwo = userOne;
+
+userTwo.email = "sushant@google.com";
+console.log(userOne.email); //sushant@google.com
+console.log(userTwo.email); //sushant@google.com
