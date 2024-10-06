@@ -19,3 +19,16 @@ console.log(anotherId);
 
 const bigNumber = 3435355343534534n; // n last ma is big int
 console.log(bigNumber);
+
+const heros = ["hero", "gunda", "villan"];
+
+// let myObj = {
+//   name: "sushant",
+//   age: 22,
+// };
+
+// const myFunction = function () {
+//   console.log("hello world");
+// };
+
+console.log(typeof bigNumber);
