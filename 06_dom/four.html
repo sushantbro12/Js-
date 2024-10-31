@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <ul class="language">
+      <li>Javascript</li>
+    </ul>
+  </body>
+  <script>
+    function addLanguage(lang) {
+      // tree travesel garcha innerHTML big projects
+      //ma optimization problems
+      const li = document.createElement("li");
+      li.innerHTML = `${lang}`;
+      document.querySelector(".language").appendChild(li);
+    }
+    addLanguage("python");
+    addLanguage("typescriptt");
+
+    function addOptimanLamguge(lang) {
+      //optimized code
+      const li = document.createElement("li");
+      li.appendChild(document.createTextNode(lang));
+      document.querySelector(".language").appendChild(li);
+    }
+    addOptimanLamguge("golang");
+
+    //Edit
+
+    const secondLang = document.querySelector("li:nth-child(2)");
+    const newli = document.createElement("li");
+    newli.textContent = "Mojo";
+    secondLang.replaceWith(newli); // replace python with mojo
+
+    //Rdit
+    const firstLang = document.querySelector("li:first-child");
+    firstLang.outerHTML = "<li>TypeScript</li>"; //javascript with typescript
+
+    //remove
+    const lastLang = document.querySelector("li:last-child");
+    lastLang.remove();
+  </script>
+</html>
